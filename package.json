@@ -31,6 +31,8 @@
   "homepage": "https://github.com/aolingge/agents-md-doctor",
   "files": [
     "docs",
-    "examples"
+    "examples",
+    "CODE_OF_CONDUCT.md"
   ]
 }
+

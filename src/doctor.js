@@ -125,3 +125,29 @@ ${rows}
 `
 }
 
+export function formatAnnotations(report) {
+  return report.results
+    .filter((result) => result.status !== 'PASS')
+    .map((result) => `::warning file=${report.file},title=${result.check}::${result.message}`)
+    .join('\n')
+}
+
+export function formatSarif(report) {
+  return {
+    version: '2.1.0',
+    $schema: 'https://json.schemastore.org/sarif-2.1.0.json',
+    runs: [
+      {
+        tool: { driver: { name: 'agents-md-doctor', informationUri: 'https://github.com/aolingge/agents-md-doctor' } },
+        results: report.results
+          .filter((result) => result.status !== 'PASS')
+          .map((result) => ({
+            ruleId: result.check,
+            level: 'warning',
+            message: { text: result.message },
+            locations: [{ physicalLocation: { artifactLocation: { uri: report.file } } }],
+          })),
+      },
+    ],
+  }
+}

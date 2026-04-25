@@ -1,0 +1,33 @@
+{
+  "name": "agents-md-doctor",
+  "version": "0.1.0",
+  "description": "A zero-dependency CLI that audits AGENTS.md files for AI coding agent readiness.",
+  "type": "module",
+  "bin": {
+    "agents-md-doctor": "./src/cli.js"
+  },
+  "scripts": {
+    "test": "node --test",
+    "check": "node src/cli.js --path fixtures/good/AGENTS.md --min-score 80"
+  },
+  "keywords": [
+    "agents-md",
+    "ai-agent",
+    "codex",
+    "claude-code",
+    "cursor",
+    "developer-tools",
+    "cli"
+  ],
+  "author": "Aolingge",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aolingge/agents-md-doctor.git"
+  },
+  "bugs": {
+    "url": "https://github.com/aolingge/agents-md-doctor/issues"
+  },
+  "homepage": "https://github.com/aolingge/agents-md-doctor"
+}
+

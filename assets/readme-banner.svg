@@ -1,0 +1,19 @@
+<svg width="1280" height="480" viewBox="0 0 1280 480" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1280" height="480" fill="#10131F"/>
+  <rect x="70" y="64" width="1140" height="352" rx="22" fill="#F7F8FA"/>
+  <rect x="110" y="105" width="430" height="270" rx="14" fill="#111827"/>
+  <text x="145" y="162" fill="#E5E7EB" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="30" font-weight="800">AGENTS.md Doctor</text>
+  <text x="145" y="206" fill="#A7F3D0" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="18">Repo instructions that agents can actually use.</text>
+  <rect x="145" y="254" width="118" height="36" rx="18" fill="#10B981"/>
+  <text x="172" y="278" fill="#052E1B" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="16" font-weight="700">score 94</text>
+  <rect x="278" y="254" width="150" height="36" rx="18" fill="#1F2937"/>
+  <text x="300" y="278" fill="#E5E7EB" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="16">zero deps</text>
+  <g font-family="JetBrains Mono,Consolas,monospace" font-size="20">
+    <text x="610" y="140" fill="#10B981">PASS</text><text x="690" y="140" fill="#111827">read-order</text>
+    <text x="610" y="192" fill="#10B981">PASS</text><text x="690" y="192" fill="#111827">build-test</text>
+    <text x="610" y="244" fill="#10B981">PASS</text><text x="690" y="244" fill="#111827">secrets</text>
+    <text x="610" y="296" fill="#F59E0B">WARN</text><text x="690" y="296" fill="#111827">project-map</text>
+    <text x="610" y="348" fill="#EF4444">FAIL</text><text x="690" y="348" fill="#111827">verification</text>
+  </g>
+</svg>
+

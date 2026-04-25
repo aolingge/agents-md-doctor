@@ -28,6 +28,9 @@
   "bugs": {
     "url": "https://github.com/aolingge/agents-md-doctor/issues"
   },
-  "homepage": "https://github.com/aolingge/agents-md-doctor"
+  "homepage": "https://github.com/aolingge/agents-md-doctor",
+  "files": [
+    "docs",
+    "examples"
+  ]
 }
-
